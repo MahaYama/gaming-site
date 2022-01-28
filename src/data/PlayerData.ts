@@ -7,7 +7,7 @@ export let players : Player[] = [
         name: "Yanda Mahaputra",
         role: "Duelist",
         agent: "Yoru",
-        agentpicture : "%svelte.assets%/yoru.webp",
+        agentpicture : "/yoru.webp",
         desc: "Yanda \"Yama\" Mahaputra. Our resident lurker duelist. With his yoru, he is able to create 200IQ play. Outplaying opponent and outplaying himself"
     },
     {
@@ -16,7 +16,7 @@ export let players : Player[] = [
         name: "Sudimahendra",
         role: "Sentinel",
         agent: "Chamber",
-        agentpicture : "%svelte.assets%/chamber.png",
+        agentpicture : "/chamber.png",
         desc: "\"Ryve\" Sudimahendra. Our beloved sentinel. Using chamber he can hold enemies, chiping 1 by 1 with his Tour de Force"
     },
     {
@@ -25,7 +25,7 @@ export let players : Player[] = [
         name: "Abhyseka Dwikurmha",
         role: "Initiator",
         agent: "Breach",
-        agentpicture : "%svelte.assets%/breach.webp",
+        agentpicture : "/breach.webp",
         desc: "Abhyseka \"Kuff\" Dwikurmha. Our game-sense initiator master. He's able to support his team and create opportunities for his team"
     },
     {
@@ -34,7 +34,7 @@ export let players : Player[] = [
         name: "Aditya Dharma",
         role: "Duelist",
         agent: "Raze",
-        agentpicture : "%svelte.assets%/raze.webp",
+        agentpicture : "/raze.webp",
         desc: "Aditya \"loveu\" Dharma. Storming down to site, opening a window with his satchel boost. Killing his opponent and clearing site"
     },
     {
@@ -43,7 +43,7 @@ export let players : Player[] = [
         name: "Alvin Wiraprathama",
         role: "Controller",
         agent: "Omen",
-        agentpicture : "%svelte.assets%/omen.webp",
+        agentpicture : "/omen.webp",
         desc: "Alvin \"Vyn\" Wiraprathama. Smoking down a site, and controlling the game. He's able to create a lot of play with his omen and support teammate with his flash"
     }
 ]

@@ -16,7 +16,7 @@
             </p>
         </div>
         <div class="">
-            <video id="video" width="640px" height="360px" src="%svelte.assets%/video.mp4" controls autoplay={true} loop></video>
+            <video id="video" width="640px" height="360px" src="/video.mp4" controls autoplay={true} loop></video>
         </div>
     </div>
     <div class="static">
