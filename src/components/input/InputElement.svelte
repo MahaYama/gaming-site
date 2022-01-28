@@ -3,6 +3,7 @@
     export let value : string
     export let regex = "";
     export let name
+    export let valid = false;
 
     const validate = (value : string, regex : string) => {
         let reg = new RegExp(regex);
@@ -16,6 +17,7 @@
     }
 
     $: error = validate(value, regex)
+    $: valid = error ? false : true;
 
 </script>
 

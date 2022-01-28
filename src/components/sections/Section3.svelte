@@ -5,7 +5,7 @@
 </script>
 
 <div class="container w-full max-w-full flex justify-center items-center bg-gray-500 relative">
-    <div class="container w-lg flex flex-col items-center absolute z-20" data-aos="fade-up">
+    <div class="container w-lg flex flex-col items-center absolute z-20">
         <h1 class="mt-2 text-6xl text-white font-bold animate-floating">
             Pick Your Agent
         </h1>

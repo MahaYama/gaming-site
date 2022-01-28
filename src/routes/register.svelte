@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 import Button from "../components/buttons/Button.svelte";
 import OutlinedButton from "../components/buttons/OutlinedButton.svelte";
+import type { Form } from "../interfaces/FormInterface";
 
 import InputElement from "../components/input/InputElement.svelte";
 
@@ -9,33 +10,58 @@ import InputElement from "../components/input/InputElement.svelte";
             "value" : "",
             "name" : "name",
             "label" : "Name",
-            "regex" : ""
+            "regex" : "",
+            "valid" : false,
         },
         {
             "value" : "",
             "name" : "nick",
             "label" : "Nickname",
-            "regex" : ""
+            "regex" : "",
+            "valid" : false,
         },
         {
             "value" : "",
             "name" : "email",
             "label" : "Email",
-            "regex" : ""
+            "regex" : "",
+            "valid" : false,
         },
         {
             "value" : "",
             "name" : "nim",
             "label" : "Nim",
             "regex" : "",
+            "valid" : false,
         },
         {
             "value" : "",
             "name" : "phone",
             "label" : "Phone",
-            "regex" : ""
+            "regex" : "",
+            "valid" : false,
         }
     ]
+
+    const validChecker = (forms : Form[]) => {
+        let valid = true;
+        forms.forEach(form => {
+            if(!form.valid) valid = false;
+        })
+        return valid;
+    }
+
+    $: valid = validChecker(forms);
+
+    const submitPush = () => {
+        if(valid) {
+            let data = {};
+            forms.forEach(form => {
+                data[form.name] = form.value;
+            })
+            console.log(data);
+        }
+    }
 
 </script>
 <div class="container w-full max-w-full flex justify-center items-center bg-valorant-blue relative overflow-visible min-h-screen py-20">
@@ -55,7 +81,7 @@ import InputElement from "../components/input/InputElement.svelte";
                 </h1>
                 <form class="mt-5">
                     {#each forms as form}
-                        <InputElement bind:value={form.value} label={form.label} name={form.name} />
+                        <InputElement bind:value={form.value} label={form.label} name={form.name} bind:valid={form.valid}/>
                     {/each}
                     <div class="w-full h-full overflow-hidden flex">
                         <OutlinedButton text="Reset"></OutlinedButton>
@@ -102,4 +128,4 @@ import InputElement from "../components/input/InputElement.svelte";
         1px 1px 0 #fff;
     }
 
-    </style>
+</style>
