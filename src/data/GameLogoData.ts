@@ -1,4 +1,4 @@
 export let logos : string[] = [
-    "/static/molen.webp",
-    '/static/r6.png',
+    "%svelte.assets%/molen.webp",
+    '%svelte.assets%/r6.png',
 ]

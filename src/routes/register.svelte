@@ -42,10 +42,10 @@ import InputElement from "../components/input/InputElement.svelte";
     <div class="container w-xl flex justify-evenly items-center z-20 static">
         <div class="relative mt-16 w-1/3 lg:block hidden animate-floating">
             <div class="static still pl-10 pt-12">
-                <img src="/static/jett_still.png" alt="jett still">
+                <img src="%svelte.assets%/jett_still.png" alt="jett still">
             </div>
             <div class="absolute top-0 left-0">
-                <img src="/static/jett_nohead.webp" alt="jett nohead">
+                <img src="%svelte.assets%/jett_nohead.webp" alt="jett nohead">
             </div>
         </div>
         <div class="w-1/3">
