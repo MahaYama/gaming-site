@@ -27,13 +27,13 @@
     <div class="container w-xl flex justify-between items-center z-20 static">
         <div class="flex flex-col justify-start items-start">
             {#each players as player}
-                 <Picker picked={picked} text={player.nickname} id={player.id} on:pick={handlePick}></Picker>
+                 <Picker picked={picked} text={player.nickname} id={player.id} on:pick={handlePick} data-aos="fade-up"></Picker>
             {/each}
         </div>
             {#if picked}
                 <img class="w-82 overflow-hidden animate-floating" src={picked.agentpicture} alt={picked.name} transition:fade/>
             {/if}
-        <div class="flex flex-col justify-start w-1/3">
+        <div class="flex flex-col justify-start w-1/3" data-aos="fade-up">
             {#if picked}
                 <h2 class="text-6xl text-white font-bold" transition:slide>
                     {picked.nickname}
@@ -53,7 +53,7 @@
     <div class="absolute inset-0">
         <div class="z-10 bg-valorant-blue opacity-90 inset-0 absolute bg-blend-normal">
         </div>
-        <div class="absolute bottom-0 right-0 p-20">
+        <div class="absolute bottom-0 right-0 p-20" data-aos="fade-up">
             <h2 class="outline-title z-1 text-6xl text-valorant-blue font-bold">
                 OUR LAST TEAM
             </h2>
@@ -61,7 +61,7 @@
                 OUR LAST TEAM
             </h2>
         </div>
-        <div class="absolute top-0 left-0 p-20">
+        <div class="absolute top-0 left-0 p-20" data-aos="fade-left">
             <h2 class="outline-title z-1 text-6xl text-valorant-blue font-bold">
                 OUR LAST TEAM
             </h2>
@@ -69,7 +69,7 @@
                 OUR LAST TEAM
             </h2>
         </div>
-        <div class="absolute top-0 right-0 mt-52">
+        <div class="absolute top-0 right-0 mt-52" data-aos="fade-up">
             <h2 class="outline-title z-1 text-5xl text-valorant-blue font-bold transform rotate-90">
                 DISSAPEARANCE <br> FROM REALITY
             </h2>

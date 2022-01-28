@@ -2,9 +2,13 @@
     import Navbar from "../components/navbar/Navbar.svelte";
     import PageTransition from "../components/transition/PageTransition.svelte"
     export let key
-    
-
     import "../app.css";
+    import { onMount } from "svelte";
+    
+    onMount(() =>{
+        // @ts-ignore
+        AOS.init();
+    })
 </script>
 
 <script context="module">

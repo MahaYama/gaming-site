@@ -1,10 +1,10 @@
 <script>
-    import Button from "../buttons/Button.svelte";
+
 </script>
 
-<div class="container w-full max-w-full flex justify-center items-center bg-gray-500 relative">
-    <div class="container w-lg flex justify-around absolute z-20">
-        <div class="h-full">
+<div class="container w-full max-w-full flex justify-center bg-gray-500 relative">
+    <div class="container w-lg flex justify-around absolute z-20 mt-44">
+        <div class="h-full flex flex-col">
             <h1 class="mt-2 text-6xl text-white font-bold">
                 Defy The Limits
             </h1>
@@ -12,13 +12,11 @@
                 Stikom E-Sport Valorant Division
             </h2>
             <p class="mt-2 text-md text-white font-light">
-                The first e-sport extracuricullar in bali. 
+                The first e-sport extracuricullar in bali. Giving you the best fully competitive experience. <br> Scrim up to once a day. And fully supportive coach and support team
             </p>
         </div>
         <div class="">
-            <canvas class="bg-black canvas">
-
-            </canvas>
+            <video id="video" width="640px" height="360px" src="/static/video.mp4" controls autoplay={true} loop></video>
         </div>
     </div>
     <div class="static">
@@ -34,7 +32,7 @@
     .canvas {
         top: 0;
         left: 0;
-        width: 2/3;
-        height: 4;
+        width: 640px;
+        height: 360px;
     }
 </style>
